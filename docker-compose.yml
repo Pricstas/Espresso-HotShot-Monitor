@@ -1,0 +1,7 @@
+version: '3'
+services:
+  hotshot-monitor:
+    build: .
+    environment:
+      - HOTSHOT_QUERY_URL=${HOTSHOT_QUERY_URL}
+      - TX_HASH=${TX_HASH}
